@@ -2,7 +2,7 @@
  * Copyright (c) 2023.  John Nelson - All rights reserved
  */
 module.exports = function (RED) {
-  function NodeTemplate (config) {
+  function Occupancy (config) {
     RED.nodes.createNode(this, config)
     const node = this
     node.config = config
@@ -23,13 +23,11 @@ module.exports = function (RED) {
 
     node.on('close', function (removed, done) {
       if (removed) {
-        // this node has been disabled/deleted
+      // this node has been disabled/deleted
       } else {
-        // This node is being restarted
+      // This node is being restarted
       }
       done()
     })
-  }
-
-  RED.nodes.registerType('node-template', NodeTemplate)
+  }RED.nodes.registerType('occupancy', Occupancy)
 }
