@@ -1,0 +1,78 @@
+{
+  "name": "@automationaddict/node-red-template",
+  "version": "0.0.0",
+  "private": false,
+  "description": "A description of the node template",
+  "keywords": [
+    "node-red",
+    "template"
+  ],
+  "homepage": "https://github.com/automationaddict/node-red-template#readme",
+  "bugs": {
+    "url": "https://github.com/automationaddict/node-red-template/issues",
+    "email": "automationaddict@me.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/automationaddict/node-red-template"
+  },
+  "funding": {
+    "type": "paypal",
+    "url": "https://www.paypal.com/donate/?hosted_button_id=ET6NX25ER6X2W"
+  },
+  "license": "MIT",
+  "author": "John Nelson",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "files": [
+    "nodes/"
+  ],
+  "scripts": {
+    "prelint": "echo RUNNING LINT",
+    "lint": "standard --fix nodes/**/*.js test/*.js && npx sort-package-json",
+    "postlint": "echo LINT VALID",
+    "prepare": "husky install",
+    "release": "np --no-publish",
+    "test": "standard --fix && mocha ./test --parallel --recursive --reporter dot --timeout 5000",
+    "version": "auto-changelog -p --unreleased --commit-limit 30 && git add CHANGELOG.md"
+  },
+  "devDependencies": {
+    "@node-red/nodes": "^3.0.2",
+    "auto-changelog": "^2.4.0",
+    "chai": "^4.3.7",
+    "describe": "^1.2.0",
+    "husky": "^8.0.0",
+    "mocha": "^10.2.0",
+    "node-red": "^3.0.2",
+    "node-red-node-test-helper": "^0.3.0",
+    "should": "^13.2.3",
+    "standard": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=19.4.0"
+  },
+  "node-red": {
+    "version": ">=3.0",
+    "nodes": {
+      "node-template": "nodes/node-template/nodetemplate.js"
+    }
+  },
+  "np": {
+    "yarn": false,
+    "contents": "dist"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "afterEach",
+      "it"
+    ],
+    "ignore": [
+      "node_modules/",
+      "examples/"
+    ]
+  }
+}

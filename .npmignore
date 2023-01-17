@@ -1,0 +1,7 @@
+.git
+.idea
+test
+node_modules
+.gitignore
+*.conf.js
+*.log
