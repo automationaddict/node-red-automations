@@ -1,0 +1,162 @@
+---
+inputArgs:
+  0: false
+  1: true
+  yes: true
+  no: false
+  on: true
+  off: false
+  start: true
+  stop: false
+  active: true
+  inactive: false
+  home: true
+  away: false
+  not_home: false
+  up: true
+  down: false
+  sunrise: true
+  sunset: false
+  above_horizon: true
+  below_horizon: false
+  true: true
+  false: false
+controlArgs:
+  manual_enable:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  manual_actual:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  manual_setpoint:
+    - 1
+    - 86400
+  motion_enable:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  motion_actual:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  motion_setpoint:
+    - 1
+    - 86400
+  light_enable:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  light_actual:
+    - 0
+    - 15000
+  light_setpoint:
+    - 0
+    - 15000
+  sun_enable:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  sun_actual:
+    - "on"
+    - "off"
+    - "up"
+    - "down"
+    - "above_horizon"
+    - "below_horizon"
+    - "sunrise"
+    - "sunset"
+  sun_setpoint:
+    - "on"
+    - "off"
+    - "up"
+    - "down"
+    - "above_horizon"
+    - "below_horizon"
+    - "sunrise"
+    - "sunset"
+  home_enable:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  home_actual:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "active"
+    - "inactive"
+    - "home"
+    - "away"
+  home_setpoint:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "active"
+    - "inactive"
+    - "home"
+    - "away"
+  enable_disable:
+    - "yes"
+    - "no"
+    - "on"
+    - "off"
+    - "start"
+    - "stop"
+    - true
+    - false
+    - 1
+    - 0
+  timer_setpoint:
+    - 0

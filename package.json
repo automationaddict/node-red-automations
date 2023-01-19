@@ -38,8 +38,11 @@
     "postlint": "echo LINT VALID",
     "prepare": "husky install",
     "release": "np --no-publish",
-    "test": "standard --fix && mocha ./test --parallel --recursive --reporter dot --timeout 5000",
+    "test": "standard --fix && mocha ./test/unit --parallel --recursive --reporter dot --timeout 5000",
     "version": "auto-changelog -p --unreleased --commit-limit 30 && git add CHANGELOG.md"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "@node-red/nodes": "^3.0.2",
