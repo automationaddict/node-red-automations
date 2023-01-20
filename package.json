@@ -30,11 +30,12 @@
     "test": "test"
   },
   "files": [
-    "nodes/"
+    "nodes/",
+    "src/"
   ],
   "scripts": {
     "prelint": "echo RUNNING LINT",
-    "lint": "standard --fix nodes/**/*.js test/*.js && npx sort-package-json",
+    "lint": "standard --fix nodes/**/*.js src/helpers/*.js test/*.js && npx sort-package-json",
     "postlint": "echo LINT VALID",
     "prepare": "husky install",
     "release": "np --no-publish",
@@ -50,9 +51,11 @@
     "chai": "^4.3.7",
     "describe": "^1.2.0",
     "husky": "^8.0.0",
+    "jsdoc": "^4.0.0",
     "mocha": "^10.2.0",
     "node-red": "^3.0.2",
     "node-red-node-test-helper": "^0.3.0",
+    "nyc": "^15.1.0",
     "should": "^13.2.3",
     "standard": "^17.0.0"
   },
