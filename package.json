@@ -34,6 +34,7 @@
     "src/"
   ],
   "scripts": {
+    "generate-docs": "jsdoc --configure jsdoc.json --verbose",
     "prelint": "echo RUNNING LINT",
     "lint": "standard --fix nodes/**/*.js src/helpers/*.js test/*.js && npx sort-package-json",
     "postlint": "echo LINT VALID",
